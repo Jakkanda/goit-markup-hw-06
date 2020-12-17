@@ -730,6 +730,55 @@ img {
   color: #ffffff;
 }
 
+.footer-form-wrapper {
+  margin-left: 93px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mail {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: #2f303a;
+}
+
+.mail::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+  margin-left: 12px;
+  height: 50px;
+  padding: 10px 28px;
+  text-align: start;
+
+}
+
+.footer-btn-wrapper {
+  position: relative;
+
+}
+
+.icon-send {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+
 /*=======================================================PORTFOLIO================================*/
 .section-examples {
   padding-top: 94px;
