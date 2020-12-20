@@ -409,11 +409,37 @@ img {
 }
 
 .form-field.checkbox {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.checkbox-icon {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-image: url("../images/icon_check.svg");
+  box-sizing: contain;
+  background-origin: border-box;
+}
+
+/* for better visual reception */
+.checkbox:focus + .checkbox-icon {
+  outline: 2px solid var(--accent-color);
 }
 
 .checkbox-label {
+  display: inline-block;
+  margin-left: 23px;
+
   font-family: (var(--main-font));
   font-weight: 400;
   font-size: 14px;
@@ -765,12 +791,10 @@ img {
   height: 50px;
   padding: 10px 28px;
   text-align: start;
-
 }
 
 .footer-btn-wrapper {
   position: relative;
-
 }
 
 .icon-send {
